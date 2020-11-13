@@ -48,8 +48,8 @@
                     </view>
                     <connections>
                         <outlet property="buttonRoll" destination="D1G-6D-Bk2" id="vav-Xd-3dC"/>
-                        <outlet property="diceOne" destination="9Hn-1B-ULO" id="PJK-je-ZHF"/>
-                        <outlet property="diceTwo" destination="6Dg-ka-pin" id="YTe-2l-5nB"/>
+                        <outlet property="diceLeft" destination="9Hn-1B-ULO" id="3de-lO-CgR"/>
+                        <outlet property="diceRight" destination="6Dg-ka-pin" id="Rok-ci-Xkc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
