@@ -46,6 +46,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonRoll" destination="D1G-6D-Bk2" id="cF6-si-ASp"/>
+                        <outlet property="diceLeft" destination="9Hn-1B-ULO" id="7dL-y4-Q4G"/>
+                        <outlet property="diceRight" destination="6Dg-ka-pin" id="fZj-jG-miv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
