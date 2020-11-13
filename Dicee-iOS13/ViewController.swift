@@ -9,15 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    // Create variables to reference UI elements
+    @IBOutlet weak var diceOne: UIImageView!
+    @IBOutlet weak var diceTwo: UIImageView!
     @IBOutlet weak var buttonRoll: UIButton!
-    @IBOutlet weak var diceRight: UIImageView!
-    @IBOutlet weak var diceLeft: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        // Change image literals on load of view.
+        diceOne.image = #imageLiteral(resourceName: "DiceSix")
+        diceTwo.image = #imageLiteral(resourceName: "DiceThree")
     }
-
-
 }
-
