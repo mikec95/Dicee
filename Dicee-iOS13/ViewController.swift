@@ -12,11 +12,15 @@ class ViewController: UIViewController {
     // Create variables to reference UI elements
     @IBOutlet weak var diceLeft: UIImageView!
     @IBOutlet weak var diceRight: UIImageView!
-    @IBOutlet weak var buttonRoll: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
     }
+
+    // Set behavior of dice on press of roll button
+    @IBAction func rollButtonPressed(_ sender: Any) {
+        
+    }
+
 }
