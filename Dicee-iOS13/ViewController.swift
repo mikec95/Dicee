@@ -20,7 +20,9 @@ class ViewController: UIViewController {
 
     // Set behavior of dice on press of roll button
     @IBAction func rollButtonPressed(_ sender: Any) {
-        
+        // Set random values for each dice
+        diceLeft.image =  [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")][Int.random(in: 0..<6)]
+        diceRight.image = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")][Int.random(in: 0..<6)]
     }
 
 }
