@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     // Create random values for each dice
     var valLeft = Int.random(in: 0..<6)
     var valRight = Int.random(in: 0..<6)
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,12 +24,14 @@ class ViewController: UIViewController {
 
     // Set behavior of dice on press of roll button
     @IBAction func rollButtonPressed(_ sender: Any) {
-        // Set dice.image based on random value
-        diceLeft.image =  [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")][valLeft]
-        diceRight.image = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")][valRight]
+        // Create array of dice and set dice.image
+        // based on random value 0-5 indexed in the array
+        let dice:Array = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")]
+        diceLeft.image =  dice[valLeft]
+        diceRight.image = dice[valRight]
 
         // Reset random value of dice image
-        valLeft = Int.random(in: 0..<6)
-        valRight = Int.random(in: 0..<6)
+        valLeft = Int.random(in: 0...5)
+        valRight = Int.random(in: 0...5)
     }
 }
