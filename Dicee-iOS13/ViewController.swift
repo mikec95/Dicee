@@ -19,14 +19,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     // Set behavior of dice on press of roll button
     @IBAction func rollButtonPressed(_ sender: Any) {
-        // Create array of dice and set dice.image
-        // based on random value 0-5 indexed in the array
+        // Create array of dice
         let dice:Array = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")]
+
+        // Set dice.image based on random value 0-5 indexed in the array
         diceLeft.image =  dice[valLeft]
         diceRight.image = dice[valRight]
 
