@@ -27,11 +27,7 @@ class ViewController: UIViewController {
         let dice:Array = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")]
 
         // Set dice.image based on random value 0-5 indexed in the array
-        diceLeft.image =  dice[valLeft]
-        diceRight.image = dice[valRight]
-
-        // Reset random value of dice image
-        valLeft = Int.random(in: 0...5)
-        valRight = Int.random(in: 0...5)
+        diceLeft.image =  dice.randomElement()
+        diceRight.image = dice.randomElement()
     }
 }
