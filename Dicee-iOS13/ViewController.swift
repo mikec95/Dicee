@@ -29,5 +29,7 @@ class ViewController: UIViewController {
         // Set dice.image based on random value 0-5 indexed in the array
         diceLeft.image =  dice.randomElement()
         diceRight.image = dice.randomElement()
+
+        // Test
     }
 }
